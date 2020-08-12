@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import PDF from '../Yan_Ru_Jhou_CV.pdf'
 
 class About extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
+
     render() {
 
         if (this.props.data) {
