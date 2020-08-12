@@ -15,11 +15,7 @@ class Contact extends Component {
     }
 
     changeState(event) {
-        /*因為所有的組件改變時都會呼叫這個function
-        所以這裡就不能像一開始一樣寫死的*/
-        //首先要去抓目前發生改變的組件的name
         let changeName = event.target.name;
-        //再把他目前的value拿去更改state
         this.setState({[changeName]: event.target.value})
     }
 
@@ -82,7 +78,7 @@ class Contact extends Component {
                                 <br/>
                             </div>
                             <div>
-                                <label></label>
+                                <label/>
                                 <input type="submit" value="Send"/>
                             </div>
                         </form>
@@ -90,7 +86,7 @@ class Contact extends Component {
 
                         <div id="message-warning"> Error boy</div>
                         <div id="message-success">
-                            <i className="fa fa-check"></i>Your message was sent, thank you!<br/>
+                            <i className="fa fa-check"/>Your message was sent, thank you!<br/>
                         </div>
                     </div>
                 </div>
